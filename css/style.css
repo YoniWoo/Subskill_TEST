@@ -1,0 +1,1641 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@font-face {
+    font-family: "Seshat";
+    src: url(../fonts/Seshat.otf);
+}
+
+:root {
+    --background-orange: #FFB563;
+    --color-text: #2D2D2D;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    height: 117px;
+    border-bottom: solid 1px #979797;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header img {
+        margin: 0 122px 0 50px;
+}
+
+ul li {
+    display: inline-block;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+}
+
+.puce::before {
+    content: "\2022";
+    width: 3px;
+    height: 3px;
+    color: var(--color-text);
+    padding: 60px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+/* FIN HEADER*/
+
+/* MAIN */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+/* ARTICLES MISE EN AVANT */
+.promote {
+    margin-bottom: 150px;
+}
+
+.first {
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.first img,
+.second img,
+.third img {
+    margin-bottom: 15px;
+}
+
+.first::before {
+    content: '';
+    display: block;
+    width: 193px;
+    height: 193px;
+    border-radius: 50%;
+    border: solid 20px #2d2d2d;
+    position: absolute;
+    top: 400px;
+    right: -95px;
+    z-index: -9999;
+}
+
+.subject {
+    width: 246px;
+    height: 34px;
+    background-color: #F2F2F2;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.subject p {
+    line-height: 34px;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: var(--color-text);
+}
+
+.date {
+    margin-bottom: 15px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.first h1,
+.second h1,
+.third h1,
+.content h1 {
+    font-family: "Seshat", serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: var(--color-text);
+    font-weight: normal;
+}
+
+.description {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #8D8D8D;
+}
+
+.twice {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-flow: row wrap;
+}
+
+.twice .second,
+.twice .third {
+    width: 526px;
+}
+
+.first h1, .second h1, .third h1 {
+    cursor: pointer;
+}
+
+.first h1:hover, .second h1:hover, .third h1:hover {
+    text-decoration: underline;
+}
+
+/* FIN ARTICLES MISE EN AVANT */
+
+/* PRESIDENTS */
+
+.presidents {
+    padding: 0 21%;
+    background-color: var(--background-orange);
+    position: relative;
+}
+
+.presidents h1 {
+    margin-top: 70px;
+    font-size: 55px;
+    font-family: "Seshat", serif;
+    color: #FFF;
+    font-weight: normal;
+}
+
+.fiches {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.fiches div:nth-child(-n+2) {
+    margin-right: 30px;
+}
+
+.fiches div img {
+    margin-bottom: 15px;
+}
+
+.fiches div h2 {
+    font-family: "Seshat", serif;
+    font-size: 30px;
+    font-weight: normal;
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+.fonction {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #FFF;
+}
+
+.presidents a {
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+    padding-left: 15px;
+    width: 299px;
+    height: 64px;
+    background-color: #FFF;
+    box-shadow: 0px 7px 10px #ececec;
+    margin-bottom: 50px;
+    position: relative;
+    font-family: "Seshat", serif;
+    font-size: 20px;
+    line-height: 64px;
+    color: var(--color-text);
+}
+
+.presidents a::before {
+    content: '\2192';
+    color: #2D2D2D;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* FIN PRESIDENTS*/
+
+/* SEMAINE JURIDIQUE */
+
+.juridique {
+    min-width: 1109px;
+    padding: 150px 21% 0;
+    background-color: #F2F2F2;
+    position: relative;
+    height: 1350px;
+    margin-bottom: 337px;
+}
+
+.juridique::before {
+    content: url(../img/juridique-cercle.png);
+    position: absolute;
+    top: -117px;
+    right: 250px;
+}
+
+.juridique::after {
+    content: url(../img/juridique-cercle-green.png);
+    position: absolute;
+    bottom: -133px;
+    left: 270px;
+}
+
+.juridique>h1, .partenaires h1 {
+    margin-bottom: 50px;
+    font-size: 55px;
+    font-family: "Seshat", serif;
+    color: var(--color-text);
+    font-weight: normal;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+}
+
+.container img,
+.container .content {
+    flex: 25%;
+}
+
+.container #thumbnail1 {
+    margin-bottom: 121px;
+    margin-right: 57px;
+    position: relative;
+    max-height: 370px;
+}
+
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgba(0, 0, 0, 0.2); 
+    min-width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.overlay::before {
+    content: url(../img/player.png);
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container .content {
+    padding-top: 24px;
+}
+
+
+#thumbnail2 {
+    position: relative;
+    margin-left: 57px;
+    max-height: 370px;
+}
+
+.content h1 {
+    margin-bottom: 15px;
+}
+
+.btn-orange {
+    display: block;
+    width: 199px;
+    height: 64px;
+    background-color: var(--background-orange);
+    font-family: "Seshat", serif;
+    font-size: 20px;
+    color: var(--color-text);
+    text-align: left;
+    line-height: 64px;
+    border: none;
+    margin-top: 30px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.btn-orange::before {
+    content: '\2192';
+    color: var(--color-text);
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.club {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.club h1 {
+    font-family: "Seshat", serif;
+    font-weight: normal;
+    font-size: 55px;
+    color: var(--color-text);
+}
+
+.green-square {
+    width: 642px;
+    height: 446px;
+    background-color: #B3DEC1;
+}
+
+.green-square p {
+    padding: 50px 57px 30px 59px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+
+.green-square a {
+    display: block;
+    width: 167px;
+    height: 64px;
+    background-color: #FFF;
+    font-family: "Seshat", serif;
+    font-size: 20px;
+    color: var(--color-text);
+    line-height: 64px;
+    padding-left: 15px;
+    margin-left: 59px;
+    position: relative;
+    box-shadow: 0px 7px 10px #ECECEC;
+}
+
+.green-square a::before {
+    content: '\2192';
+    color: var(--color-text);
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#thumbnail1 img,#thumbnail2 img {
+    cursor: pointer;
+}
+
+/* FIN SEMAINE JURIDIQUE */
+
+/* PARTENAIRES */
+
+.partenaires {
+    max-width: 1109px;
+    margin-bottom: 150px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-flow: row wrap;
+}
+
+.case {
+    width: 348px;
+    height: 176px;
+    background-color: #FFF;
+    box-shadow: 0px 3px 10px #D4D4D4;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.case img {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+
+#carrefour {
+    background-color: #0D2D99;
+}
+
+.case:nth-child(3n - 1) {
+    margin: 0 32px;
+}
+
+.partenaires a{
+    display: block;
+    width: 243px;
+    height: 64px;
+    background-color: var(--background-orange);
+    font-family: "Seshat", serif;
+    font-size: 20px;
+    color: var(--color-text);
+    line-height: 64px;
+    padding-left: 15px;
+    margin: 40px auto 0;
+    position: relative;
+    box-shadow: 0px 7px 10px #ECECEC;
+}
+
+.partenaires a::before {
+    content: '\2192';
+    color: var(--color-text);
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* FIN PARTENAIRES */
+
+/* DERNIERES VIDEOS */
+
+.slider {
+    min-width: 1109px;
+    min-height: 692px;
+    background-color: #F2F2F2;
+    padding: 0 21%;
+    position: relative;
+}
+
+.slider h1 {
+    font-family: "Seshat", serif;
+    font-weight: normal;
+    font-size: 55px;
+    color: var(--color-text);
+    margin: 70px 0 50px;
+}
+
+.fake-parent {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.slider-content .date {
+    margin-top: 15px;
+}
+
+.slider-content h2 {
+    font-family: "Seshat", serif;
+    font-size: 25px;
+    color: var(--color-text);
+    font-weight: normal;
+}
+
+.slider-content:nth-child(2) {
+    margin: 0 29px 0 30px;
+}
+
+.slider-img {
+    position: relative;
+    height: 240px;
+}
+
+.arrow-left {
+    width: 59px;
+    height: 59px;
+    background-color: var(--background-orange);
+    position: absolute;
+    top: 55%;
+    left: 10%;
+    z-index: 1;
+}
+
+.arrow-right {
+    width: 59px;
+    height: 59px;
+    background-color: var(--background-orange);
+    position: absolute;
+    top: 55%;
+    right: 10%;
+}
+
+.arrow-left::before {
+    content: '\2190';
+    color: var(--color-text);
+    position: absolute;
+    line-height: 59px;
+    font-size: 17px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.arrow-right::before {
+    content: '\2192';
+    color: var(--color-text);
+    position: absolute;
+    line-height: 59px;
+    font-size: 17px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider h2:hover {
+    text-decoration: underline;
+}
+
+.slider-content h2 {
+    cursor: pointer;
+}
+
+.slider-img {
+    cursor: pointer;
+}
+
+/* FIN DERNIERES VIDEO*/
+
+/* FORMULAIRE */
+
+.formulaire {
+    max-width: 1109px;
+    margin-bottom: 100px;
+}
+
+.formulaire h1 {
+    font-family: "Seshat", serif;
+    font-weight: normal;
+    font-size: 55px;
+    color: var(--color-text);
+    margin: 150px 0 30px;
+}
+
+.formulaire p {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: var(--color-text);
+}
+
+.formulaire p:nth-child(2) {
+    margin-bottom: 15px;
+}
+
+.formulaire p:nth-child(3) {
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 50px;
+}
+
+.informations {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.informations div {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 50%;
+    margin-bottom: 30px;
+}
+
+label {
+    margin-bottom: 15px;
+    font-family: "Seshat", serif;
+    font-size: 30px;
+    color: var(--color-text);
+}
+
+.required::after {
+    content: ' *';
+    font-family: "Seshat", serif;
+    font-size: 30px;
+    color: var(--background-orange);
+}
+
+input[type="text"] {
+    width: 489px;
+    border-width: 0;
+    border-bottom: solid 1px #DCDCDC;
+    outline: 0;
+    padding-bottom: 5px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #848484;
+}
+
+.last-name input, .destinataire #destinataire {
+    margin-left: 65px;
+}
+
+.last-name label, .destinataire label {
+    padding-left: 65px;
+}
+
+#destinataire {
+    width: 489px;
+    border-width: 0;
+    border: solid 1px #FFF;
+    border-bottom: solid 1px #DCDCDC;
+    outline: 0;
+    padding-bottom: 5px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #848484;
+}
+
+.message {
+    margin-bottom: 50px !important;
+}
+
+#message {
+    width: inherit;
+    height: 85px;
+    border-width: 0;
+    border: solid 1px #FFF;
+    border-bottom: solid 1px #DCDCDC;
+    outline: 0;
+    padding-bottom: 5px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #848484;
+    resize: none;
+}
+
+.submit {
+    position: relative;
+    width: fit-content;
+}
+
+input[type="submit"] {
+    width: 125px;
+    height: 64px;
+    line-height: 64px;
+    border: none;
+    text-align: left;
+    background-color: var(--background-orange);
+    padding-left: 15px;
+    font-family: "Seshat", serif;
+    font-size: 20px;
+    color: var(--color-text);
+    cursor: pointer;
+}
+
+.submit::after {
+    content: '\2192';
+    color: var(--color-text);
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* FIN FORMULAIRE */
+
+/* FIN MAIN */
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 224px;
+    background-color: #F2F2F2;
+}
+
+footer img {
+    margin-right: 90px;
+}
+
+footer ul li {
+    margin: 0 30px;
+}
+
+/* FIN FOOTER */
+
+/* MEDIA QUERY */
+
+@media all and (min-width: 1441px) {
+    header {
+        justify-content: center;
+    }
+
+    .arrow-right {
+        right: 15%;
+    }
+
+    .arrow-left {
+        left: 15%;
+    }
+}
+
+@media all and (min-width: 400px) and (max-width: 513px) {
+
+    /* MENU BURGER MOBILE*/
+
+    header {
+        position: relative;
+        overflow: hidden;
+    }
+
+    nav {
+        position: absolute;
+        width: inherit;
+    }
+
+    #menuToggle {
+        display: block;
+        position: relative;
+        left: 50px;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    #menuToggle a {
+        text-decoration: none;
+        color: #232323;
+        transition: color 0.3s ease;
+    }
+
+    #menuToggle input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2;
+        -webkit-touch-callout: none;
+    }
+
+    #menuToggle span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: var(--color-text);
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            opacity 0.55s ease;
+    }
+
+    #menuToggle span:first-child {
+        transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+
+    #menuToggle input:checked~span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #232323;
+    }
+
+    #menuToggle input:checked~span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    #menuToggle input:checked~span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    #menu {
+        position: fixed;
+        min-width: 100vw;
+        height: 100vh;
+        margin: -100px 0 0 -50px;
+        padding-left: 50px;
+        padding-top: 125px;
+        background: #FFF;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+        display: flex;
+        flex-flow: column wrap;
+        align-items: start;
+        justify-content: stretch;
+    }
+
+    #menu li {
+        padding: 10px 0;
+        font-size: 22px;
+    }
+
+    #menuToggle input:checked~ul {
+        transform: none;
+    }
+
+    .puce::before {
+        display: none;
+    }
+
+    /* FIN MENU BURGER MOBILE */
+
+    main {
+        margin-top: 20px;
+        max-width: 100%;
+    }
+    
+    .first img {
+        max-width: 300px;
+        max-height: 135px;
+    }
+    
+    .first {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0 50px;
+    }
+    
+    .twice {
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .promote {
+        max-width: 100%;
+    }
+    
+    .second img, .third img {
+        max-width: 300px;
+    }
+    
+    .twice .second, .twice .third {
+        max-width: 400px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+    
+    .second:nth-child(n), .third:nth-child(n) {
+        max-width: 300px;
+    }
+    
+    .third {
+        margin: 0 !important;
+    }
+    
+    .presidents {
+        max-width: 100%;
+    }
+    
+    .fiches {
+        flex-direction: column;
+    }
+    
+    .fiches div:nth-child(-n+2) {
+        margin: 0 0 30px;
+    }
+    
+    header img {
+        margin: 0 auto;
+    }
+    
+    .juridique {
+        min-width: 100%;
+        height: unset;
+        padding-top: 70px;
+        margin-bottom: 150px;
+    }
+    
+    .presidents h1 {
+        font-size: 36px;
+    }
+    
+    .juridique>h1, .partenaires h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+    
+    #thumbnail1 img, #thumbnail2 img {
+        max-width: 300px;
+    }
+    
+    .container #thumbnail1 {
+        margin: 0;
+        height: unset;
+    }
+    
+    .overlay {
+        height: 210px;
+        top: 0;
+    }
+    
+    .container .content {
+        max-width: 300px;
+    }
+    
+    .container {
+        justify-content: center;
+    }
+    
+    #thumbnail2 {
+        margin-top: 70px;
+        margin-left: 0;
+        order: 1;
+    }
+    
+    .container:nth-child(3n) {
+        order: 2;
+    }
+    
+    .third-child {
+        order: 2;
+    }
+    
+    .club h1 {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+    
+    .club {
+        justify-content: center;
+    }
+    
+    .green-square {
+        height: unset;
+        padding-bottom: 50px;
+        width: 100%;
+    }
+    
+    .cards .case {
+        margin: 30px 32px;
+    }
+    
+    .slider {
+        min-width: 400px;
+    }
+    
+    .slider h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+    
+    .slider-img .overlay {
+        height: 100%;
+    }
+
+    .fake-parent {
+        flex-wrap: nowrap;
+    }
+    
+    .arrow-left {
+        z-index: 1;
+        left: 16%;
+        top: 40%;
+    }
+    
+    .arrow-right {
+        z-index: 1;
+        right: 16%;
+        top: 40%;
+    }
+    
+    .formulaire {
+        max-width: 100%;
+    }
+    
+    .informations div {
+        max-width: 90%;
+    }
+    
+    .last-name label, .destinataire label {
+        padding: 0;
+    }
+    
+    .last-name input, .destinataire #destinataire {
+        margin: 0;
+    }
+    
+    input[type="text"] {
+        max-width: 95%;
+    }
+    
+    #destinataire {
+        max-width: 95%;
+    }
+    
+    .submit {
+        margin: 0 auto;
+    }
+    
+    footer img {
+        margin-left: 40px;
+    }
+
+    .juridique::before, .juridique::after, .first::before {
+        display: none;
+    }
+}
+
+@media all and (min-width: 514px) and (max-width: 767px) {
+
+    /* MENU BURGER MOBILE*/
+    header {
+        position: relative;
+        overflow: hidden;
+    }
+
+    nav {
+        position: absolute;
+        width: inherit;
+    }
+
+    #menuToggle {
+        display: block;
+        position: relative;
+        left: 50px;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    #menuToggle a {
+        text-decoration: none;
+        color: #232323;
+        transition: color 0.3s ease;
+    }
+
+    #menuToggle input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2;
+        -webkit-touch-callout: none;
+    }
+
+    #menuToggle span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: var(--color-text);
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            opacity 0.55s ease;
+    }
+
+    #menuToggle span:first-child {
+        transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+
+    #menuToggle input:checked~span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #232323;
+    }
+
+    #menuToggle input:checked~span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    #menuToggle input:checked~span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    #menu {
+        position: fixed;
+        min-width: 100vw;
+        height: 100vh;
+        margin: -100px 0 0 -50px;
+        padding-left: 50px;
+        padding-top: 125px;
+        background: #FFF;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+        display: flex;
+        flex-flow: column wrap;
+        align-items: start;
+        justify-content: stretch;
+    }
+
+    #menu li {
+        padding: 10px 0;
+        font-size: 22px;
+    }
+
+    #menuToggle input:checked~ul {
+        transform: none;
+    }
+
+    .puce::before {
+        display: none;
+    }
+
+    /* FIN MENU BURGER MOBILE */
+    
+    header img {
+        margin: 0 auto;
+    }
+    
+    .promote {
+        max-width: 100%;
+    }
+    
+    .first img, .second img, .third img {
+        max-width: 100%;
+    }
+    
+    .first {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        max-width: 100%;
+        margin: 0 auto 70px;
+        padding: 0px 50px;
+    }
+    
+    .twice .second, .twice .third {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        max-width: 100%;
+        margin: 0 auto 70px;
+        padding: 0px 50px;
+    }
+    
+    .third {
+        margin-bottom: 0 !important;
+    }
+    
+    .presidents {
+        min-width: 100%;
+        padding: 0;
+    }
+    
+    .presidents h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+    
+    .fiches {
+        flex-flow: column wrap;
+    }
+    
+    .fiches div:nth-child(-n+2) {margin: 30px 0;}
+    
+    .juridique>h1, .partenaires h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+    
+    .juridique {
+        min-width: 100%;
+        height: unset;
+        padding-top: 70px;
+        margin-bottom: 150px;
+    }
+    
+    .container #thumbnail1 {
+        margin: 0;
+        max-width: 100%;
+    }
+    
+    .container {
+        max-width: 100%;
+        padding: 0 50px;
+    }
+    
+    #thumbnail1 img, #thumbnail2 img {
+        max-width: 100%;
+        min-height: 100%;
+    }
+    
+    .third-child {
+        order: 2;
+    }
+    
+    #thumbnail2 {
+        margin-top: 70px;
+        margin-left: 0;
+    }
+    
+    #thumbnail1 .overlay, #thumbnail2 .overlay {
+        height: calc(100% - 4px);
+        top: 0;
+    }
+    
+    .club {
+        justify-content: center;
+    }
+    
+    .club h1 {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    .green-square {
+        min-width: 100%;
+    }
+
+    .green-square p {
+        padding: 30px 57px 30px 59px;
+    }
+    
+    .case {
+        margin: 15px 0 !important;
+    }
+    
+    
+    .slider {
+        min-width: 100%;
+    }
+    
+    .slider h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+    
+    .fake-parent {
+        flex-wrap: nowrap;
+    }
+    
+    .arrow-left {
+        left: 16%;
+    }
+    
+    .arrow-right {
+        right: 16%;
+    }
+    
+    .formulaire {
+        max-width: 100%;
+    }
+    
+    .last-name label, .destinataire label {
+        padding: 0;
+    }
+    
+    .last-name input, .destinataire #destinataire {
+        margin: 0;
+    }
+    
+    input[type="text"] {
+            max-width: 95%;
+    }
+        
+    #destinataire {
+        max-width: 95%;
+    }
+        
+    .submit {
+        margin: 0 auto;
+    }
+    
+    .informations div {
+        max-width: 90%;
+    }
+
+    .container {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    
+    .formulaire p {
+        padding: 0 20px;
+    }
+    
+    
+    .formulaire h1 {
+        font-size: 36px;
+        text-align: center;
+        margin-top: 70px;
+    }
+    
+    ul {
+        display: grid;
+    }
+
+    .juridique::before, .juridique::after, .first::before {
+        display: none;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1108px) {
+
+    /* MENU BURGER MOBILE*/
+    header {
+        position: relative;
+        overflow: hidden;
+    }
+
+    nav {
+        position: absolute;
+        width: inherit;
+    }
+
+    #menuToggle {
+        display: block;
+        position: relative;
+        left: 50px;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    #menuToggle a {
+        text-decoration: none;
+        color: #232323;
+        transition: color 0.3s ease;
+    }
+
+    #menuToggle input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2;
+        -webkit-touch-callout: none;
+    }
+
+    #menuToggle span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: var(--color-text);
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            opacity 0.55s ease;
+    }
+
+    #menuToggle span:first-child {
+        transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+
+    #menuToggle input:checked~span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #232323;
+    }
+
+    #menuToggle input:checked~span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    #menuToggle input:checked~span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    #menu {
+        position: fixed;
+        min-width: 100vw;
+        height: 100vh;
+        margin: -100px 0 0 -50px;
+        padding-left: 50px;
+        padding-top: 125px;
+        background: #FFF;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+        display: flex;
+        flex-flow: column wrap;
+        align-items: start;
+        justify-content: stretch;
+    }
+
+    #menu li {
+        padding: 10px 0;
+        font-size: 22px;
+    }
+
+    #menuToggle input:checked~ul {
+        transform: none;
+    }
+
+    .puce::before {
+        display: none;
+    }
+
+    /* FIN MENU BURGER MOBILE */
+
+    main {
+        max-width: 100%;
+    }
+    
+    header img {
+        margin: 0 auto;
+    }
+    
+    .promote {
+        min-width: 100%;
+    }
+    
+    .first img {
+        width: 650px;
+        height: 293px;
+    }
+    
+    .first {
+        display: flex;
+        flex-flow: column wrap;
+        max-width: 650px;
+        margin: 0 auto 70px;
+    }
+    
+    .twice {
+        max-width: 100%;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    
+    .second {
+        margin-bottom: 70px;
+    }
+    
+    .presidents {
+        min-width: 100%;
+    }
+    
+    .fiches {
+        flex-direction: column;
+    }
+    
+    .fiches div:nth-child(-n+2) {
+        margin: 0 0 30px;
+    }
+    
+    .presidents {
+        padding: unset;
+    }
+    
+    .presidents h1 {
+        text-align: center;
+    }
+    
+    .juridique {
+        min-width: 100%;
+        height: unset;
+        padding-top: 70px;
+        margin-bottom: 150px;
+    }
+    
+    .juridique>h1, .partenaires h1 {
+        text-align: center;
+    }
+    
+    .container {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+    
+    .container #thumbnail1 {
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+    
+    .container .content {
+        min-width: 525px;
+    }
+    
+    .third-child {
+        order: 2;
+    }
+    
+    #thumbnail2 {
+        margin: 70px 0 0;
+        height: 370px;
+    }
+    
+    .club {
+        justify-content: center;
+        margin-top: 70px;
+    }
+    
+    .club h1 {
+        margin-bottom: 50px;
+    }
+    
+    .green-square {
+        min-width: 100%;
+    }
+    
+    .cards {
+        justify-content: space-around;
+    }
+    
+    .slider {
+        min-width: 100%;
+        padding: unset;
+    }
+    
+    .fake-parent {
+        flex-wrap: nowrap;
+        flex: 100%;
+    }
+    
+    .slider-content {
+        flex-basis: 1;
+    }
+    
+    .arrow-left {
+        z-index: 1;
+    }
+    
+    .formulaire {
+        max-width: 100%;
+    }
+    
+    .last-name label, .destinataire label {
+        padding: 0;
+    }
+    
+    .last-name input, .destinataire #destinataire {
+        margin: 0;
+    }
+    
+    .informations div {
+        max-width: 75%;
+    }
+    
+    .submit {
+        margin: 0 auto;
+    }
+    
+    footer img {
+        margin-left: 40px;
+    }
+    
+    ul {
+        display: grid;
+    }
+
+    .juridique::before, .juridique::after, .first::before {
+        display: none;
+    }
+
+    .case:nth-child(3n - 1) {
+        margin: 0;
+    }
+    
+    .slider h1 {
+        text-align: center;
+    }
+    
+    .formulaire p {
+        padding: 0 20px;
+    }
+    
+    .formulaire h1 {
+        text-align: center;
+    }
+
+}
+
+/* FIN MEDIA QUERY */
